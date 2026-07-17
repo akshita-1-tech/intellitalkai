@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IntelliTalk AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="theme-neon">
+
+    <!-- Animated Background -->
+
+    <div class="background">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- ================= SCREEN 1 ================= -->
+
+    <section id="screen1" class="screen active">
+
+        <div class="glass">
+
+            <div class="avatar">🤖</div>
+
+            <h1>IntelliTalk AI</h1>
+
+            <p class="tagline">
+                Talk. Transform. Imagine.
+            </p>
+
+            <div class="status">
+
+                <div class="dot"></div>
+
+                AI Online
+
+            </div>
+
+            <div id="clock">00:00:00</div>
+
+            <button id="enterBtn">
+                ENTER AI →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SCREEN 2 ================= -->
+
+    <section id="screen2" class="screen">
+
+        <div class="glass">
+
+            <h1>🌍 Choose Language</h1>
+
+            <p class="tagline">
+
+                Select your preferred language
+
+            </p>
+
+            <div class="language-grid">
+
+                <div class="lang-card">🇬🇧 English</div>
+
+                <div class="lang-card">🇮🇳 Telugu</div>
+
+                <div class="lang-card">🇮🇳 Hindi</div>
+
+            </div>
+
+            <button id="languageContinue">
+              NEXT →
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SCREEN 4 ================= -->
+
+<section id="screen4" class="screen">
+
+    <div class="glass">
+
+        <h1>🎨 Choose Theme</h1>
+
+        <p class="tagline">
+            Select your favourite theme
+        </p>
+
+        <div class="theme-grid">
+
+            <div class="theme-card neon">🌌 Neon Blue</div>
+
+            <div class="theme-card purple">💜 Cyber Purple</div>
+
+            <div class="theme-card ocean">🌊 Ocean</div>
+
+            <div class="theme-card dark">🌑 Dark AI</div>
+
+            <div class="theme-card aurora">🌈 Aurora</div>
+
+        </div>
+
+        <div class="nav-buttons">
+
+    <button id="themeBack">
+        ⬅ Back
+    </button>
+
+    <button id="themeContinue">
+        NEXT →
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ================= SCREEN 5 ================= -->
+
+<section id="screen5" class="screen">
+
+    <div class="glass">
+
+        <h1>🤖 Choose AI Mode</h1>
+
+        <p class="tagline">
+            Select how your AI should respond
+        </p>
+
+        <div class="mode-grid">
+
+            <div class="mode-card" data-mode="AI Assistant">🤖<br>AI Assistant</div>
+
+            
+
+            <div class="mode-card" data-mode="Future Me">🔮<br>Future Me</div>
+
+            <div class="mode-card" data-mode="Pirate Chat">☠️<br>Pirate Chat</div>
+
+            <div class="mode-card" data-mode="Cheerful Mode">😊<br>Cheerful Mode</div>
+
+            <div class="mode-card" data-mode="Life Coach">🧭<br>Life Coach</div>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <button id="modeBack">
+                ⬅ Back
+            </button>
+
+            <button id="modeContinue">
+                NEXT →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SCREEN 6 ================= -->
+
+<section id="screen6" class="screen">
+
+    <div class="glass">
+
+        <div class="avatar">
+            🤖
+        </div>
+
+        <h1>Confirm Your Choices</h1>
+
+        <p class="tagline">
+
+            Please review before launching AI
+
+        </p>
+
+        <div class="summary-box">
+
+            <p>
+                🌍 <strong>Language:</strong>
+                <span id="summaryLanguage"></span>
+            </p>
+
+            <p>
+                🎨 <strong>Theme:</strong>
+                <span id="summaryTheme"></span>
+            </p>
+
+            <p>
+                🤖 <strong>Mode:</strong>
+                <span id="summaryMode"></span>
+            </p>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <button id="confirmBack">
+                ⬅ Back
+            </button>
+
+            <button id="startAI">
+                🚀 START AI
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SCREEN 7 ================= -->
+
+<section id="screen7" class="screen">
+
+    <div class="glass">
+
+        <div class="avatar">🤖</div>
+
+        <h1>Initializing AI...</h1>
+
+        <p class="tagline">
+
+            Connecting to Gemini AI
+
+        </p>
+
+        <div class="loader">
+
+            <div class="loader-bar"></div>
+
+        </div>
+
+        <p id="loadingText">
+
+            Please wait...
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= SCREEN 8 ================= -->
+
+<section id="screen8" class="screen">
+
+    <div class="glass chat-card">
+
+        <div class="chat-header">
+
+            <div class="avatar-small">🤖</div>
+
+            <div>
+
+                <h2>IntelliTalk AI</h2>
+
+                <p class="chat-status">🟢 Connected</p>
+
+            </div>
+
+            <button id="translatorOpenBtn" class="chat-header-btn">🌐 Translator</button>
+
+        </div>
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="bot-message">
+
+                👋 Hello! I'm IntelliTalk AI.
+
+                <br><br>
+
+                How can I help you today?
+
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+            >
+
+            <button id="micBtn">🎤</button>
+            <p id="micStatus">Click microphone to speak</p>
+
+            <button id="sendBtn">➤</button>
+
+        </div>
+
+</section>
+
+    <!-- ================= SCREEN 3 ================= -->
+
+    <section id="screen3" class="screen">
+
+        <div class="glass">
+
+            <h1>🌐 AI Translator</h1>
+
+            <p class="tagline">
+                Translate your text automatically based on the selected language.
+            </p>
+
+            <div class="translator-card">
+                <div class="translator-info">
+                    <div class="translator-source">
+                        <label for="translatorSourceSelect">Source language</label>
+                        <select id="translatorSourceSelect">
+                            <option>English</option>
+                            <option>Telugu</option>
+                            <option>Hindi</option>
+                        </select>
+                    </div>
+                    <div class="translator-targets-block">
+                        <label>Translate into</label>
+                        <div class="translator-targets" id="translatorTargets"></div>
+                    </div>
+                </div>
+
+                <textarea id="translatorInput" placeholder="Type text to translate..." rows="5"></textarea>
+
+                <div class="translator-control-row">
+                    <button id="translatorMicBtn">🎤 Speak</button>
+                    <button id="translatorSpeakBtn">🔊 Hear result</button>
+                    <p id="translatorMicStatus">Click microphone to speak</p>
+                </div>
+
+                <button id="translateBtn">Translate Now</button>
+
+                <div class="translation-results hidden" id="translationResults">
+                    <div class="translation-box">
+                        <h3 id="targetLabel1">Telugu</h3>
+                        <div id="translationResult1" class="translation-result"></div>
+                    </div>
+                    <div class="translation-box">
+                        <h3 id="targetLabel2">Hindi</h3>
+                        <div id="translationResult2" class="translation-result"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="translator-actions nav-buttons">
+                <button id="translatorBack">⬅ Back</button>
+                <button id="translatorContinue">Close</button>
+                <button id="translatorChatBack">Back to Chat</button>
+            </div>
+
+        </div>
+
+    </section>
+
+ 
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
