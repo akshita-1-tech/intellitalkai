@@ -58,7 +58,7 @@ const translationResult1 = document.getElementById("translationResult1");
 const translationResult2 = document.getElementById("translationResult2");
 const translationResults = document.getElementById("translationResults");
 const translatorOpenBtn = document.getElementById("translatorOpenBtn");
-const translateUrl = (window.location.origin && window.location.origin !== "null") ? `${window.location.origin}/translate` : "http://localhost:3000/translate";
+const translateUrl = "https://intellitalkai.onrender.com/translate";
 
 function getEffectiveSourceLanguage() {
     const preferredLanguage = selectedLanguage || translatorSourceSelect?.value || "English";
@@ -604,7 +604,7 @@ async function sendMessage(){
 
     try{
         console.log("Fetching /chat with:", {message, language: selectedLanguage, mode: selectedMode});
-        const response = await fetch("/chat",{
+        const response = await fetch("https://intellitalkai.onrender.com/chat",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
